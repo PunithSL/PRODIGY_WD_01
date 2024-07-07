@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="watch.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="laps">
+        <div class="laps_header">
+          <h5>Timer</h5>
+          <h1>Stop Watch</h1>
+        </div>
+
+        <div class="time">
+          <div class="timing-panel">
+            <div class="time-hours">
+              <h3>Hours</h3>
+              <div class="hours">00</div>
+            </div>
+            <div class="time-minutes">
+              <h3>Minutes</h3>
+              <div class="minutes">00</div>
+            </div>
+            <div class="time-seconds">
+              <h3>Seconds</h3>
+              <div class="seconds">00</div>
+            </div>
+            <div class="time-milliseconds">
+              <h3>Milliseconds</h3>
+              <div class="milliseconds">00</div>
+            </div>
+          </div>
+          <div class="control_panel">
+            <div class="control_reset">
+              <button class="control_reset_btn">
+                <img src="icon/refresh.png" />
+              </button>
+            </div>
+            <div class="control_start">
+              <button class="control_start_btn">
+                <img src="icon/play.png" />
+              </button>
+            </div>
+            <div class="control_lap">
+              <button class="control_lap_btn">
+                <img src="icon/flag.png" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="laps_time scroller">
+          <table>
+            <thead>
+              <tr>
+                <th>LAPS</th>
+                <th>LAP TIME</th>
+                <th>OVERALL</th>
+              </tr>
+            </thead>
+            <tbody id="laps_table"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="watch.js"></script>
+  </body>
+</html>
